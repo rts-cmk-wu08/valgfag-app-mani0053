@@ -1,15 +1,21 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
+import OneSignal from 'react-onesignal';
 
 function App() {
+
+  useEffect (() => {
+    OneSignal.init({
+      appId: process.env.REACT_APP_ONESIGNAL});
+  }, []);
 
   const [data, setData] = useState({})
   const [location, SetLocation] = useState('')
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
-    axios.get(url).then((response) => {
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`).then((response) => {
       setData(response.data)
       console.log(response.data)
     })

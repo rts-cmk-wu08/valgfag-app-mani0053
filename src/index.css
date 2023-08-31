@@ -21,6 +21,7 @@ code {
 .app{
   text-align: center;
 }
+
 p {
 font-size: 2em;
 }
@@ -48,19 +49,24 @@ font-size: 2em;
 .app .search {
   text-align: center;
   padding: 1em;
+  position: absolute;
+
 }
+
 .app input {
   padding: 0.5em 1.5em;
   font-size: 1.2em;
   border-radius: 25px;
   border: 1px solid white;
-  background: #b9b7b7;
+  background: grey;
+  opacity: 0.6;
   color: white;
 }
 
 ::placeholder {
   color: white;
 }
+
 .app .top {
   width: 100%;
   margin: 1em auto;
