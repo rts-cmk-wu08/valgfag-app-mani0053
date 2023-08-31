@@ -36,12 +36,14 @@ function App() {
         />
       </div>
       <div className='container'>
+
+        {data.name !== undefined &&
         <div className='top'>
           <div className='location'>
             <p>{data.name}</p>
           </div>
           <div className='temp'>
-          {data.main ? <p>{data.main.temp.toFixed()}</p> : null}
+          {data.main ? <p>{data.main.temp.toFixed()}°C</p> : null}
           
           </div>
           <div className='description'>
@@ -49,15 +51,17 @@ function App() {
           </div>
 
         </div>
+        }
+
         {data.name !== undefined &&
         <div className='bottom'>
           <div className='feels'>
-            {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}</p> : null}
+            {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}°C</p> : null}
             <p>Feels like</p>
           </div>
           <div className='humidity'>
             {data.main ? <p className='bold'>{data.main.humidity}%</p> : null}
-            <p>humidity</p>
+            <p>Humidity</p>
           </div>
           <div className='wind'>
           {data.wind ? <p className='bold'>{data.wind.speed.toFixed()}MPH</p> : null}
