@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
 import OneSignal from 'react-onesignal';
+import PWAPrompt from 'react-ios-pwa-prompt';
 
 function App() {
 
@@ -25,9 +26,15 @@ function App() {
 
 
   return (
+    <>
     <div className="app">
-      <h1>This is your daily weather app</h1>
+    <header>
+    <h1>This is your daily weather app</h1>
       <p>Type a location in the searchbar</p>
+    </header>
+
+    <main>
+  
       <div className='search'>
         <input
         value={location}
@@ -72,7 +79,15 @@ function App() {
         </div>
         }
       </div>
+   
+    </main>
+    
+    <footer>
+      PWA project - WU08 22/23
+    </footer>
     </div>
+    <PWAPrompt/>
+    </>
   );
 }
 
