@@ -49,8 +49,6 @@ font-size: 2em;
 .app .search {
   text-align: center;
   padding: 1em;
-  position: absolute;
-
 }
 
 .app input {
