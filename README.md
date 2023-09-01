@@ -15,3 +15,6 @@ Søgelinjen er den vigtigste funktionalitet i applikationen fordi uden den kan m
 ### Hvilke andre funktionaliteter kunne du forestille dig, at applikationen kunne have (hvis du havde masser af tid)?
 
 Hvis jeg havde masser af tid ville jeg bl.a. inkludere nogle bevægelsesbilleder alt efter hvordan vejret er. F.eks. hvis det regner vil der være noget regn animation og hvis der er sol vil der være en bevægende sol animation.
+
+Link til applikation
+https://inspiring-beignet-7415f9.netlify.app/
