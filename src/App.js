@@ -63,7 +63,7 @@ function App() {
           <div className="container">
             {data.name !== undefined && (
               <div>
-                <p>{f.format(today)}</p>
+                <p className="today">{f.format(today)}</p>
                 <div className="top">
                   <div className="location">
                     <p>{data.name}</p>
